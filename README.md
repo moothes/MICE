@@ -23,6 +23,6 @@ python main.py MICE --stage=finetune
 # Testing
 python test.py MICE
 
-# Testing
-python test_external.py MICE-[Cohort]_[Task]
+# Independent validation
+python test_independent.py MICE-[Cohort]_[Task]
 ```
