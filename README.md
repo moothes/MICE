@@ -8,7 +8,7 @@ For TCGA dataset, pathology images, mRNA expression data, and a clean version of
 The HANCOCK dataset is publicly available at [this link]{https://hancock.research.fau.eu}.
 
 You can prepare your pathology data following the steps described in [this link](https://github.com/mahmoodlab/SurvPath).   
-After that, your should generate a ```.csv``` file to include the follow-ups (e.g., OS) and path to corresponding multimodal data for the patients.
+After that, your should generate a ```.csv``` file to include the follow-ups (e.g., OS) and path to corresponding multimodal data for all patients.
 
 ## Running 
 ```python
