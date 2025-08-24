@@ -8,7 +8,9 @@ For TCGA dataset, pathology images, mRNA expression data, and a clean version of
 The HANCOCK dataset is publicly available at [this link](https://hancock.research.fau.eu).
 
 You can prepare your pathology data following the steps described in [this link](https://github.com/mahmoodlab/SurvPath) and use [UNI](https://github.com/mahmoodlab/UNI/tree/main) to extract patch embeddings.   
-After that, your should generate a ```.csv``` file to include the follow-ups (e.g., OS) and path to corresponding multimodal data for all patients.
+Then, leveraging the [BioBERT](https://github.com/dmis-lab/biobert) to extract features from clinical reports. 
+Finally, your should generate a ```.csv``` file to include the follow-ups (e.g., OS) and path to corresponding multimodal data for all patients.
+
 
 ## Running 
 ```python
