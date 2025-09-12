@@ -20,9 +20,7 @@ python main.py MICE --stage=pretrain
 # Fine-tuning
 python main.py MICE --stage=finetune
 
-# Internal validation
+# Validation
 python test.py MICE
 
-# Independent validation
-python test_independent.py MICE-[Cohort]_[Task]
 ```
