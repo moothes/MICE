@@ -84,8 +84,8 @@ class Network(nn.Module):
         self.attmil = MambaMIL(path_dim, self.feat_dim)
         self.path_holder = MLP_Block(self.feat_dim, self.feat_dim)
 
-        self.path_mean = torch.load('data/path/tcga_gpfm_mean.pt').cuda()
-        self.path_std = torch.load('data/path/tcga_gpfm_std.pt').cuda()
+        self.path_mean = torch.load('data/path/tcga_uni_mean.pt').cuda()
+        self.path_std = torch.load('data/path/tcga_uni_std.pt').cuda()
 
         # Genomic representation
         self.omic_snn = nn.Sequential(MLP_Block(20245, self.feat_dim*2), MLP_Block(self.feat_dim*2, self.feat_dim))
@@ -162,3 +162,4 @@ class Network(nn.Module):
         out_dict['hazards'] = [fuse_hazard]
         out_dict['S'] = [fuse_S]
         return out_dict
+
